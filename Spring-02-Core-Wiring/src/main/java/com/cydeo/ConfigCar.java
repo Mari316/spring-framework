@@ -22,7 +22,7 @@ public class ConfigCar {
 //        return p;
 //    }
 
-    //Autowiring
+    //Autowiring  - inject object for us
     @Bean
     Person person(Car car){
         Person p = new Person();
