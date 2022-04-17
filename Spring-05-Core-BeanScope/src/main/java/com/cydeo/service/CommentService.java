@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 //@Scope("prototype") // allow us create different beans in the container
 @Scope(BeanDefinition.SCOPE_PROTOTYPE) // another way to declare prototype
+//@Eager-default-(will allow to create onj every time its run) and @Lazy(will create it only once?)
 @Component  // Class itself as dependency
 public class CommentService {
     // we will never change this dependency
